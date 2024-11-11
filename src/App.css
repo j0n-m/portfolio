@@ -1,42 +1,30 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.github-icon {
+  background-image: url("/src/assets/images/icons/github.svg");
+}
+.linkedin-icon {
+  background-image: url("/src/assets/images/icons/linkedin.svg");
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.tech-section:hover .tech-section-label::after {
+  width: 100%;
 }
 
-@keyframes logo-spin {
+.menu-modal {
+  &[data-entering] {
+    animation: modal-slide 300ms;
+  }
+
+  &[data-exiting] {
+    animation: modal-slide 400ms reverse ease-in;
+  }
+}
+
+@keyframes modal-slide {
   from {
-    transform: rotate(0deg);
+    transform: translateX(-100%);
   }
+
   to {
-    transform: rotate(360deg);
+    transform: translateX(0);
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

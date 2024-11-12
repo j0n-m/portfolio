@@ -14,7 +14,7 @@ function AboutMe() {
         <div className="flex-1">
           <h2
             id="about"
-            className="font-bold text-center py-3 text-secondary uppercase text-sm"
+            className="font-bold text-center py-3 text-secondary uppercase text-sm scroll-mt-[80px]"
           >
             About me
           </h2>

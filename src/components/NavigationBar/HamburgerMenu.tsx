@@ -27,15 +27,15 @@ function HamburgerMenu() {
       >
         <MenuIcon aria-label="Menu" className="" size={28} strokeWidth={2} />
       </Button>
-      <ModalOverlay className="menu-overlay fixed inset-0 bg-transparent">
+      <ModalOverlay className="menu-overlay z-40 fixed inset-0 bg-transparent">
         <Modal
           isDismissable={true}
-          className="menu-modal bg-white fixed inset-0 z-40"
+          className="menu-modal z-50 bg-white fixed inset-0"
         >
           <Dialog className="relative z-50 min-h-svh flex items-center justify-center outline-none">
             {({ close }) => (
               <>
-                <div className="absolute top-0 right-2 p-4">
+                <div className="absolute top-0 right-2 p-4 z-50">
                   <Button
                     aria-label="Close Menu"
                     className={({ isFocusVisible, isHovered }) =>
@@ -49,7 +49,7 @@ function HamburgerMenu() {
                   </Button>
                 </div>
                 <div className="nav-links flex justify-center items-center overflow-hidden">
-                  <ul className="text-center flex flex-col gap-6">
+                  <ul className="text-center flex flex-col gap-6 py-2">
                     {navItems.map((link) => (
                       <li
                         autoFocus={link.id === 100}

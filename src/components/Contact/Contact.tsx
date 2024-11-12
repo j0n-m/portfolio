@@ -30,7 +30,7 @@ function Contact() {
           <div className="w-[85%] mx-auto lg:w-full">
             <h2
               id="contact"
-              className="font-bold text-start py-3 text-secondary uppercase text-sm"
+              className="font-bold text-start py-3 text-secondary uppercase text-sm scroll-mt-[80px]"
             >
               Contact
             </h2>

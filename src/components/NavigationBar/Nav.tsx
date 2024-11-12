@@ -3,7 +3,7 @@ import HamburgerMenu from "./HamburgerMenu";
 
 function Nav() {
   return (
-    <nav className="py-3 px-6 sticky top-0 bg-white shadow-md">
+    <nav className="py-3 px-6 sticky top-0 left-0 right-0 bg-white shadow-md z-30">
       <ul className="flex">
         <li>
           <a href="/">

@@ -1,3 +1,4 @@
+import links from "../../utils/links";
 import navItems from "../../utils/navItems";
 
 function Footer() {
@@ -8,7 +9,7 @@ function Footer() {
         <div className="flex gap-4">
           {navItems.map((link) => (
             <a
-              href=""
+              href={link.href}
               key={link.id}
               className="hover:text-blue-400 focus-visible:text-blue-400 transition-colors duration-300"
             >
@@ -18,13 +19,13 @@ function Footer() {
         </div>
         <div className="flex gap-4 my-3">
           <a
-            href=""
+            href={links["github"]}
             className="hover:underline focus-visible:underline underline-offset-2"
           >
             GitHub
           </a>
           <a
-            href=""
+            href={links["linkedin"]}
             className="hover:underline focus-visible:underline underline-offset-2"
           >
             LinkedIn

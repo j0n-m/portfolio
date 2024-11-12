@@ -1,3 +1,5 @@
+import links from "../../utils/links";
+
 function HeroSection() {
   return (
     <section className="hero min-h-[calc(100svh-56px)] bg-gray-a0 px-4 md:px-10 lg:px-20 py-24">
@@ -14,11 +16,21 @@ function HeroSection() {
           I am passionate and eager to learn when it comes to Web Developement.
         </p>
         <div className="icon-section flex gap-6 my-12 justify-center items-center">
-          <a href="" className="" title="LinkedIn Profile">
-            <div className="linkedin-icon size-8 hover:scale-105 transition-all duration-300"></div>
+          <a
+            href={links["linkedin"]}
+            target="_blank"
+            className=""
+            title="LinkedIn Profile"
+          >
+            <div className="linkedin-icon size-8 hover:scale-110 transition-all duration-300"></div>
           </a>
-          <a href="" className="" title="Github Profile">
-            <div className="github-icon size-8 hover:scale-105 transition-all duration-300"></div>
+          <a
+            href={links["github"]}
+            target="_blank"
+            className=""
+            title="Github Profile"
+          >
+            <div className="github-icon size-8 hover:scale-110 transition-all duration-300"></div>
           </a>
         </div>
         <div className="tech-section mt-12 lg:mt-20 flex flex-col items-center justify-center py-6">
@@ -26,7 +38,7 @@ function HeroSection() {
             Tech Stack
           </p>
           <div className="tech-stack">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 lg:gap-8">
               <img
                 src="https://skillicons.dev/icons?i=js,ts"
                 alt="Javascript & Typescript"

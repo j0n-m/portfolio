@@ -1,22 +1,18 @@
 import { CopyIcon, MailIcon } from "lucide-react";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { Button, Tooltip, TooltipTrigger } from "react-aria-components";
 
 function Contact() {
   const [showEmail, setShowEmail] = useState(false);
   const [email] = useState("jon.monarrez10@gmail.com");
-  const emailInput = useRef<HTMLInputElement>(null);
   const [showClipboardOverlay, setShowClipboardOverlay] = useState(false);
   const [clipboardToolTipText, setClipboardToolTipText] =
     useState("Copy email");
 
   const handleCopyEmail = async () => {
-    // console.log(emailInput?.current);
-    emailInput.current?.select();
-    emailInput.current?.setSelectionRange(0, 999);
     await navigator.clipboard.writeText(email);
     setShowClipboardOverlay(true);
-    setClipboardToolTipText("Copied.");
+    setClipboardToolTipText("Copied");
     setTimeout(() => {
       setShowClipboardOverlay(false);
       setClipboardToolTipText("Copy email");
@@ -117,13 +113,6 @@ function Contact() {
           </div>
         </div>
       </div>
-      <input
-        type="text"
-        readOnly
-        className="opacity-0"
-        value={email}
-        ref={emailInput}
-      />
     </section>
   );
 }

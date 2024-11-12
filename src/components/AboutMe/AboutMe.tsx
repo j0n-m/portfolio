@@ -46,7 +46,7 @@ function AboutMe() {
             </p>
             <p className="pt-2">
               For any questions you may have, feel free to{" "}
-              <a href="#contact" className="text-secondary">
+              <a href="#contact" className="text-secondary underline">
                 email me
               </a>
               .

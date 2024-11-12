@@ -8,7 +8,7 @@ function Portfolio() {
           <div className="w-[85%] mx-auto lg:w-full">
             <h2
               id="projects"
-              className="font-bold text-start py-3 text-secondary uppercase text-sm scroll-mt-[80px]"
+              className="font-bold text-start py-3 text-secondary2 uppercase text-sm scroll-mt-[80px]"
             >
               Portfolio
             </h2>

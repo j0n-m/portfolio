@@ -9,6 +9,7 @@ export default {
         "black-a0": "#2d2e32",
         // secondary: "#147efb",
         secondary: "#0470EC",
+        secondary2: "#046EE7",
       },
     },
   },

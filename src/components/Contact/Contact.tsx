@@ -41,7 +41,7 @@ function Contact() {
                 <div className="flex items-center flex-wrap whitespace-pre text-sm md:text-base">
                   {showEmail ? (
                     <div
-                      className={`flex flex-wrap items-center relative gap-2`}
+                      className={`flex flex-wrap items-center relative gap-1`}
                     >
                       <span>{email}</span>
                       <TooltipTrigger
@@ -57,7 +57,7 @@ function Contact() {
                             isPressed,
                             isFocused,
                           }) =>
-                            `select-none text-gray-t0 transition-colors duration-500 ${
+                            `select-none text-gray-t0 transition-colors p-1 duration-500 ${
                               isFocusVisible
                                 ? "outline outline-secondary text-secondary"
                                 : isHovered || isPressed || isFocused

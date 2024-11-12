@@ -5,7 +5,7 @@ const links = {
   "github-clash": "https://github.com/j0n-m/frontend-clash-fitness-center",
   cyberden: "https://cyberden.jon-m.xyz",
   clash: "https://clash-fitness.netlify.app",
-  linkedin: "",
+  linkedin: "https://www.linkedin.com/in/jonathan-m-948229212/",
 };
 
 export default links;

@@ -239,12 +239,12 @@ function Portfolio() {
                   </a>
                 </div>
               </div>
-              <div className="object-cover flex flex-col mx-auto justify-center max-w-[75%] lg:w-full">
+              <div className="object-cover flex flex-col justify-center max-w-[75%] mx-auto lg:w-full">
                 <img
-                  src="https://res.cloudinary.com/dgio3wn9w/image/upload/t_portfolio-tab/v1734334225/clash-fitness-site-shot_ahhedn"
+                  src="https://res.cloudinary.com/dgio3wn9w/image/upload/t_portfolio-desk/v1734334225/clash-fitness-site-shot_ahhedn"
                   srcSet="
                   https://res.cloudinary.com/dgio3wn9w/image/upload/t_portfolio-tab/v1734334225/clash-fitness-site-shot_ahhedn 600w,
-                  https://res.cloudinary.com/dgio3wn9w/image/upload/clash-fitness-site-shot_ahhedn.png 1024w,
+                  https://res.cloudinary.com/dgio3wn9w/image/upload/t_portfolio-desk/clash-fitness-site-shot_ahhedn.png 1024w,
                   "
                   alt="Clash Fitness website image preview"
                   sizes="(max-width: 1024px) 75vw, 50vw"
